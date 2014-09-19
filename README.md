@@ -1,3 +1,3 @@
 Postcard-app
 ============
-this is just me trying to learn xcode
+this is just me trying to learn xcode.
