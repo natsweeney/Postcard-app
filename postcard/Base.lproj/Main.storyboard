@@ -86,7 +86,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqx-Hi-GDB">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.44862842559814453" green="0.25542780756950378" blue="0.32666364312171936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Send Mail">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -97,13 +98,22 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lh7-2K-iu7"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUT-nc-XMX">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw5-ja-gSQ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="85" width="180" height="21"/>
+                                    <rect key="frame" x="20" y="78" width="190" height="21"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUT-nc-XMX">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="107" width="180" height="27"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -114,6 +124,7 @@
                                 <exclude reference="KhN-JO-2zL"/>
                                 <exclude reference="N7R-2T-Bze"/>
                                 <exclude reference="aqx-Hi-GDB"/>
+                                <exclude reference="yw5-ja-gSQ"/>
                                 <exclude reference="cUT-nc-XMX"/>
                             </mask>
                         </variation>
@@ -123,6 +134,7 @@
                                 <include reference="KhN-JO-2zL"/>
                                 <include reference="N7R-2T-Bze"/>
                                 <include reference="aqx-Hi-GDB"/>
+                                <include reference="yw5-ja-gSQ"/>
                                 <include reference="cUT-nc-XMX"/>
                             </mask>
                         </variation>
@@ -134,6 +146,7 @@
                         <outlet property="enterNameTextField" destination="KhN-JO-2zL" id="efM-6q-y67"/>
                         <outlet property="mailButton" destination="aqx-Hi-GDB" id="dae-IT-9iV"/>
                         <outlet property="messageLabel" destination="cUT-nc-XMX" id="67t-bG-pOJ"/>
+                        <outlet property="nameLabel" destination="yw5-ja-gSQ" id="PXf-Yo-wbg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
